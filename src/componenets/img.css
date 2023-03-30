@@ -1,0 +1,26 @@
+.image {
+    height: 700px; /* initial height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .img-txt {
+    font-size: 4rem;
+    color: white;
+    margin-left: -95rem;
+    margin-top: -550px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  @media only screen and (max-width: 768px) {
+    /* Mobile and tablet devices */
+    .image {
+      height: 100%; /* reduced height */
+    }
+    
+    .img-txt {
+      font-size: 2rem; /* smaller font size */
+    }
+  }

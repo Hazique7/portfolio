@@ -11,3 +11,93 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.image{
+  position: relative;
+ height: 100vh;
+ width: 100%;
+ margin-top: 88px;
+
+
+}
+.content{
+display: flex;
+align-items: center;
+justify-content: center;
+position: absolute;
+height: 100vh;
+width: 100vh;
+margin-left: 19rem;
+}
+.content span.img-txt {
+  text-align: center;
+  align-items: center;
+justify-content: center;
+background-color: #333;
+text-transform: uppercase;
+color: #ffff;
+padding: 1rem;
+font-size: 1.5rem;
+letter-spacing: 10px;
+}
+h3{
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  font: 1.3rem;
+  text-align: center;
+}
+.Text-Box{
+  text-align: center;
+  padding: 3rem 1rem;
+  text-align: justify;
+}
+/* Styles for screens larger than 768px */
+@media (min-width: 768px) {
+  .image {
+    height: 80vh;
+    margin-top: 64px;
+  }
+  
+  .content {
+    height: 80vh;
+    margin-left: 25rem;
+  }
+  
+  .content span.img-txt {
+    font-size: 2rem;
+    letter-spacing: 12px;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  .Text-Box {
+    padding: 5rem 2rem;
+  }
+}
+
+/* Styles for screens smaller than 768px */
+@media (max-width: 767px) {
+  .image {
+    height: 50vh;
+    margin-top: 64px;
+  }
+  
+  .content {
+    height: 50vh;
+    margin-left: 0;
+  }
+  
+  .content span.img-txt {
+    font-size: 1.5rem;
+    letter-spacing: 6px;
+  }
+  
+  h3 {
+    font-size: 1rem;
+  }
+  
+  .Text-Box {
+    padding: 2rem;
+  }
+}
